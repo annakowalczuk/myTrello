@@ -57,12 +57,15 @@ body {
     color: #2f3542;
     .column-container {
         display: flex;
+        flex-wrap: wrap;
         margin: 30px;
         justify-content: space-around;
         .column {
             @extend %border-brand;
             background-color: #eeeff1;
             min-width: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             position: relative; //for buttons
             .btn-delete {
                 @extend %btn-delete-brand;
